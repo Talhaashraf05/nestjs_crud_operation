@@ -42,6 +42,10 @@ To test the CRUD API, you can use Postman, which provides a convenient way to in
 
 4. **Inspect Responses**: Postman will display the responses from the API. You can analyze the status codes and data returned to verify the operations.
 
+## How to make it work:
+   - Update .env file with your mysql server info such as username,password,database
+   - and open terminal in the directory and write npm install 
+
 ## Conclusion
 
 In conclusion, the CRUD API developed using Nest.js and MySQL with ORM provides a robust and efficient way to perform CRUD operations on data. Postman simplifies the testing process by allowing easy interaction with the API endpoints.
