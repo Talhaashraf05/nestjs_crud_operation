@@ -1,73 +1,47 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# CRUD API with Nest.js, MySQL, and Postman
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This document provides an overview of the CRUD (Create, Read, Update, Delete) API that has been developed using Nest.js, MySQL as the database, and Postman for testing HTTP requests.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Overview
 
-## Description
+The CRUD API is built using the Nest.js framework, which is a powerful and extensible Node.js framework for building scalable and maintainable applications. The API interacts with a MySQL database using an Object-Relational Mapping (ORM) system for efficient data handling.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Features
 
-## Installation
+- **Create Operation**: The API allows you to create new records by sending a POST request. It processes the incoming data, validates it, and then stores it in the MySQL database.
 
-```bash
-$ npm install
-```
+- **Read Operation**: You can retrieve data from the database using GET requests. The API supports various query parameters to filter and paginate the results.
 
-## Running the app
+- **Update Operation**: Data can be updated using PUT or PATCH requests. The API validates the incoming data and updates the corresponding records in the database.
 
-```bash
-# development
-$ npm run start
+- **Delete Operation**: Existing records can be deleted by sending DELETE requests. The API identifies the target record and removes it from the database.
 
-# watch mode
-$ npm run start:dev
+## Technologies Used
 
-# production mode
-$ npm run start:prod
-```
+- **Nest.js**: A progressive Node.js framework for building efficient, scalable, and maintainable server-side applications.
 
-## Test
+- **MySQL**: A popular open-source relational database management system used for storing and retrieving data.
 
-```bash
-# unit tests
-$ npm run test
+- **ORM (TypeORM)**: An Object-Relational Mapping library for TypeScript and JavaScript that simplifies database interactions by using classes and objects to represent database tables and records.
 
-# e2e tests
-$ npm run test:e2e
+- **Postman**: A versatile tool used for testing APIs by sending HTTP requests and receiving responses. It provides a user-friendly interface for making requests and analyzing results.
 
-# test coverage
-$ npm run test:cov
-```
+## Testing with Postman
 
-## Support
+To test the CRUD API, you can use Postman, which provides a convenient way to interact with the API endpoints:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+1. **Installation**: Install Postman on your machine if you haven't already.
 
-## Stay in touch
+2. **Import Collection**: Import the provided Postman collection that includes pre-configured requests for CRUD operations.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+3. **Testing Endpoints**:
+   - Create: Use the POST request in the collection to add new records.
+   - Read: Utilize the GET request to retrieve data from the API.
+   - Update: Use PUT or PATCH requests to modify existing records.
+   - Delete: Send DELETE requests to remove records.
 
-## License
+4. **Inspect Responses**: Postman will display the responses from the API. You can analyze the status codes and data returned to verify the operations.
 
-Nest is [MIT licensed](LICENSE).
+## Conclusion
+
+In conclusion, the CRUD API developed using Nest.js and MySQL with ORM provides a robust and efficient way to perform CRUD operations on data. Postman simplifies the testing process by allowing easy interaction with the API endpoints.
