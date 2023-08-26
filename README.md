@@ -1,4 +1,4 @@
-# CRUD API with Nest.js, MySQL, and Postman
+# CRUD API with Nest.js, MySQL(ORM), and Postman
 
 This document provides an overview of the CRUD (Create, Read, Update, Delete) API that has been developed using Nest.js, MySQL as the database, and Postman for testing HTTP requests.
 
